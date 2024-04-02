@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Francesca Ysabelle Galang">
+
+    <title>KRBi</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="/index.bfa1d38c.css">
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1 style="text-align: center">KRBi</h1>
+      <p style="text-align: center">Catered to your K-R&B needs *wink*</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr>
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <table>
+        <thead>
+          <!-- Statically create the headings for your table here -->
+          <tr>
+            <th>Songs - Click the Images to Listen to Each Song</th>
+          </tr>
+        </thead>
+        <tbody id="songs">
+          <!-- Dynamically create your product rows here -->
+          <div id="card-container">
+            <div id="card"></div>
+          </div>
+        </tbody>
+      </table>
+    </main>
+    <footer>Images from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></footer>
+
+    <style>table, tbody {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.card:hover {
+  background-color: #add8e6;
+}
+
+.card {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 200px;
+  height: 225px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card h3 {
+  color: navy;
+  margin: 10px;
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.song-info {
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.song-info time {
+  color: #f5f5f5;
+  background-color: navy;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 2.5px;
+}
+
+.song-info span {
+  color: navy;
+  margin-right: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.info {
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+</style>
+
+    <!-- JavaScript Data Files -->
+    <script src="/index.b040860f.js"></script>
+    <script src="/index.72f6a3a7.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="/index.8f0c9192.js"></script>
+  <script src="/assignment-5.59712999.js"></script></body>
+</html>

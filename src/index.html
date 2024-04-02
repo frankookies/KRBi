@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Francesca Ysabelle Galang" />
+
+    <title>KRBi</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1 style="text-align: center">KRBi</h1>
+      <p style="text-align: center">Catered to your K-R&B needs *wink*</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <table>
+        <thead>
+          <!-- Statically create the headings for your table here -->
+          <tr>
+            <th>Songs - Click the Images to Listen to Each Song</th>
+          </tr>
+        </thead>
+        <tbody id="songs">
+          <!-- Dynamically create your product rows here -->
+          <div id="card-container">
+            <div id="card"></div>
+          </div>
+        </tbody>
+      </table>
+    </main>
+    <footer>Images from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></footer>
+
+    <style>
+      table {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      tbody {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      .card:hover {
+        background-color: lightblue;
+      }
+
+      .card {
+        width: 200px;
+        height: 225px;
+        background-color: lightgrey;
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Add padding to individual cards */
+        position: relative;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card h3 {
+        margin: 10px;
+        color: navy;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .song-info {
+        display: flex;
+        justify-content: space-between;
+        position: absolute; /* Position absolutely within the card */
+        bottom: 0; /* Place at the bottom */
+        left: 0; /* Optional: Align to the left */
+        right: 0; /* Optional: Align to the right */
+      }
+
+      .song-info time {
+        background-color: navy;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding: 2.5px;
+        color: whitesmoke;
+      }
+
+      .song-info span {
+        margin-right: 20px;
+        color: navy;
+        font-weight: bold;
+        padding: 5px;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+    </style>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
